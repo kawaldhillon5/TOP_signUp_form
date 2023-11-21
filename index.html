@@ -76,11 +76,23 @@
            <form action="#" method="post">
             <fieldset>
                 <legend>Create Account</legend>
-                <input type="text" id="name" placeholder="User Name">
-                <input type="email" id="email" placeholder="Email Address">
-                <input type="password" id="password_1" placeholder="Password" >
-                <input type="password" id="password_2" placeholder="Confirm Password">
-                <button type="submit" >Sign Up</button>
+                <div class="in">
+                    <label for="name"><img class="icons" src="resources/user.svg" alt=""></label>
+                    <input type="text" id="name" placeholder="User Name" minlength="5" maxlength="18" required>
+                </div>
+                <div class="in">
+                    <label for="email"><img class="icons" src="resources/@.svg" alt=""></label>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="in">
+                    <label for="password_1"><img class="icons" src="resources/lock.svg" alt=""></label>
+                    <input type="password" id="password_1" placeholder="Password" required>
+                </div>
+                <div class="in">
+                    <label for="password_2"><img class="icons" src="resources/lock.svg" alt=""></label>
+                    <input type="password" id="password_2" placeholder="Confirm Password" required>
+                </div>
+                <button id="btn" >Sign Up</button>
             </fieldset>
            </form>
         </div>

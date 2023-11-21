@@ -60,7 +60,6 @@ footer{
     margin-right: 20px;
 }
 
-/* unvisited link */
 a{
     text-decoration: none;
     color: black;
@@ -95,11 +94,26 @@ fieldset{
     border: 2px solid;
     border-radius: 8px;
 }
+
+.in{
+    display: block;
+}
 input{
     margin: 20px;
+    border: none;
     font-size: large;
+    border-bottom: 2px solid rgb(68, 130, 184);;
+    transition: border-color 200ms ease-in-out, border-bottom-width 200ms ease-in-out;
 }
 
+input:invalid{
+    border-bottom: 2px solid rgb(219, 17, 17);;
+    border-bottom-width: 2px;
+}
+
+input:focus{
+    outline: none;
+}
 #arm_up,
 #arm_down{
     transition: all 0.2s ease;
@@ -113,4 +127,12 @@ svg:hover #arm_up{
     }
 svg:hover #arm_down {
    opacity: 0;
+}
+
+button{
+    background-color: rgb(189, 211, 230);
+    height: 40px;
+    width: 90px;
+    font-size: large;
+    border-radius: 10px;
 }
