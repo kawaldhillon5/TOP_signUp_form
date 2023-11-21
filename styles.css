@@ -5,10 +5,21 @@ html,body{
     background-color: grey;
     height: 100%;
     margin: 0;
-    align-items: center;
 }
 
+html{
+    background-image: url(resources/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    opacity: 70%;
+    background-color: white;
+    
+}
 .main{
+    
     margin-top: auto;
     margin-bottom: auto;
     background-color: white;
@@ -19,6 +30,42 @@ html,body{
     min-width: 1000px;
 }
 
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    font-size: larger;
+}
+
+footer{
+    text-align: center;
+}
+
+.header,
+footer{
+    background-color: rgb(68, 130, 184);
+}
+
+.top_name{
+    margin-left: 10px;
+    margin-right: auto;
+    font-size: 40px;
+}
+.links{
+    margin-right: 10px;
+}
+
+.links>a{
+    margin-right: 20px;
+}
+
+/* unvisited link */
+a{
+    text-decoration: none;
+    color: black;
+}
+    
 .left{
     display: flex;
     justify-content:left;
@@ -45,6 +92,8 @@ fieldset{
     justify-content: center;
     align-items: center;
     min-width: 300px;
+    border: 2px solid;
+    border-radius: 8px;
 }
 input{
     margin: 20px;
