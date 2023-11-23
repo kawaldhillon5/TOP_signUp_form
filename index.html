@@ -73,7 +73,7 @@
         </div>
         <div id="right">
             <div class="msg">Sign Up with Us</div>
-           <form action="#" method="post">
+           <form action="#gh" method="post">
             <fieldset>
                 <legend>Create Account</legend>
                 <div class="in">
@@ -86,18 +86,19 @@
                 </div>
                 <div class="in">
                     <label for="password_1"><img class="icons" src="resources/lock.svg" alt=""></label>
-                    <input type="password" id="password_1" placeholder="Password" required>
+                    <input type="password" id="password_1" placeholder="Password" minlength="8" maxlength="30" required>
                 </div>
                 <div class="in">
                     <label for="password_2"><img class="icons" src="resources/lock.svg" alt=""></label>
-                    <input type="password" id="password_2" placeholder="Confirm Password" required>
+                    <input type="password" id="password_2" placeholder="Confirm Password" minlength="8" maxlength="30" required>
                 </div>
+                <span id="error" ></span>
                 <button id="btn" >Sign Up</button>
             </fieldset>
            </form>
         </div>
     </div>
     <footer><a href="https://github.com/kawaldhillon5">Kawal Dhillon</a></footer>
-    <script src="script.jss" ></script>
+    <script src="script.js"></script>
 </body>
 </html>
